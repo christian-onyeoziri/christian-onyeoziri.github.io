@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications & Research | Christian Onyeoziri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">CO</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="publications.html" class="active">Publications</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="tag">Research & Innovation</span>
+            <h1>Publications & Research</h1>
+            <p>Contributing to engineering knowledge and innovation</p>
+        </div>
+    </header>
+
+    <!-- Research Publications -->
+    <section>
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Academic Contributions</span>
+                <h2>Research Works</h2>
+            </div>
+
+            <div class="publication-list">
+                <div class="publication-card scroll-animate">
+                    <div class="publication-year">2020</div>
+                    <div class="publication-content">
+                        <h3>Extraction of Bio-oils and Biodiesel from African Oil Bean Seeds</h3>
+                        <p class="publication-authors">Christian I. Onyeoziri</p>
+                        <p class="publication-description">
+                            Comprehensive research investigating African oil bean seeds as feedstock for bio-oil and biodiesel 
+                            production. The study examined the effects of thermal pre-treatments on the quality and yield of bio-oil, 
+                            contributing valuable insights to sustainable energy technology development and renewable fuel alternatives.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="meta-tag">Renewable Energy</span>
+                            <span class="meta-tag">Biofuels</span>
+                            <span class="meta-tag">Thermal Processing</span>
+                            <span class="meta-tag">Postgraduate Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card scroll-animate">
+                    <div class="publication-year">2014</div>
+                    <div class="publication-content">
+                        <h3>Design and Construction of Mechanical Wheel-Powered Sprayer</h3>
+                        <p class="publication-authors">Christian I. Onyeoziri</p>
+                        <p class="publication-description">
+                            Engineering thesis presenting the design, construction, and performance evaluation of an innovative 
+                            mechanical sprayer powered by wheel rotation. The research improved ease of operation, time utilization 
+                            in spraying, and convenience across various land formations. Awarded Certificate of Merit for contribution 
+                            to technology development at Scientific Equipment Development Institute.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="meta-tag">Mechanical Design</span>
+                            <span class="meta-tag">Agricultural Technology</span>
+                            <span class="meta-tag">Product Innovation</span>
+                            <span class="meta-tag">Award-Winning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card scroll-animate">
+                    <div class="publication-year">2012</div>
+                    <div class="publication-content">
+                        <h3>Construction of Tiger Nut Drying Machine</h3>
+                        <p class="publication-authors">Christian I. Onyeoziri</p>
+                        <p class="publication-description">
+                            Technical thesis documenting the design and construction of an automated tiger nut drying system. 
+                            The research focused on reducing drying time while preserving nutritional content for use as a 
+                            substitute for maize in poultry feed formulation. Included comprehensive nutrient analysis and 
+                            performance evaluation.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="meta-tag">Agricultural Engineering</span>
+                            <span class="meta-tag">Food Processing</span>
+                            <span class="meta-tag">Thermal Systems</span>
+                            <span class="meta-tag">HND Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card scroll-animate">
+                    <div class="publication-year">2009</div>
+                    <div class="publication-content">
+                        <h3>Production of Sandcrete Blocks for Poultry House Construction</h3>
+                        <p class="publication-authors">Christian I. Onyeoziri</p>
+                        <p class="publication-description">
+                            Practical research project on sandcrete block production for deep litter system poultry house 
+                            construction. The study included strength analysis of produced blocks, quality control measures, 
+                            and structural compliance evaluation for agricultural building applications.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="meta-tag">Materials Science</span>
+                            <span class="meta-tag">Structural Analysis</span>
+                            <span class="meta-tag">Agricultural Construction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .publication-list {
+            display: grid;
+            gap: 30px;
+        }
+
+        .publication-card {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 30px;
+            background: var(--surface);
+            border: 1px solid var(--surface-light);
+            border-radius: 12px;
+            padding: 35px;
+            transition: all 0.3s ease;
+        }
+
+        .publication-card:hover {
+            border-color: var(--accent);
+            transform: translateX(10px);
+        }
+
+        .publication-year {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .publication-content h3 {
+            color: var(--text);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .publication-authors {
+            color: var(--accent-secondary);
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .publication-description {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .publication-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .meta-tag {
+            background: var(--surface-light);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-family: 'Space Mono', monospace;
+        }
+
+        @media (max-width: 768px) {
+            .publication-card {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+    </style>
+
+    <!-- Certifications & Awards -->
+    <section style="background: var(--surface);">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Recognition</span>
+                <h2>Awards & Certifications</h2>
+            </div>
+
+            <div class="awards-grid">
+                <div class="award-card scroll-animate">
+                    <div class="award-icon">🏆</div>
+                    <h3>I-FAIR Israel/Nigeria Innovator Award</h3>
+                    <p>International recognition for Iconets Sprayer innovation</p>
+                </div>
+
+                <div class="award-card scroll-animate">
+                    <div class="award-icon">🎖️</div>
+                    <h3>Certificate of Merit</h3>
+                    <p>Mechanical Wheel Sprayer - Technology Development Contribution</p>
+                </div>
+
+                <div class="award-card scroll-animate">
+                    <div class="award-icon">📜</div>
+                    <h3>Millennium Development Goals DKF</h3>
+                    <p>Development Knowledge Facilitator Certification</p>
+                </div>
+
+                <div class="award-card scroll-animate">
+                    <div class="award-icon">🎓</div>
+                    <h3>Skill Acquisition Training</h3>
+                    <p>Agro Allied Technology & Entrepreneurship</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .award-card {
+            background: var(--primary);
+            border: 1px solid var(--surface-light);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .award-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+        }
+
+        .award-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .award-card h3 {
+            color: var(--text);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .award-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Christian Onyeoziri</h3>
+                    <p>Mechanical Engineer & Innovator</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:iconetsenterprise@gmail.com">iconetsenterprise@gmail.com</a></li>
+                        <li><a href="tel:+2348034913133">+234 803 491 3133</a></li>
+                        <li><a href="https://linkedin.com/in/christian-onyeoziri">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Christian Onyeoziri. Engineered with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

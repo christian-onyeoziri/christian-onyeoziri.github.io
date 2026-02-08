@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Christian Onyeoziri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">CO</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="tag">Get to Know Me</span>
+            <h1>About Me</h1>
+            <p>Passionate about engineering innovation and solving complex challenges</p>
+        </div>
+    </header>
+
+    <!-- Main About Content -->
+    <section>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text scroll-animate">
+                    <h2>Engineering Innovation Through Precision</h2>
+                    <p>
+                        I am a results-driven Mechanical Engineer with over 7 years of comprehensive experience in product design, 
+                        fabrication, and manufacturing systems optimization. My journey in engineering has been defined by a 
+                        relentless pursuit of excellence and a passion for transforming complex challenges into elegant solutions.
+                    </p>
+                    <p>
+                        With demonstrated expertise in 3D CAD modeling using SolidWorks and CNC programming with Fusion 360, 
+                        I bring a unique blend of technical proficiency and hands-on production management. My approach combines 
+                        systematic problem-solving with creative innovation, consistently delivering solutions that improve 
+                        operational efficiency by up to 70%.
+                    </p>
+                    <p>
+                        Throughout my career, I have led cross-functional engineering teams, managed multi-department operations, 
+                        and pioneered innovative agricultural machinery designs. My work has been recognized with awards including 
+                        the I-FAIR Israel/Nigeria Innovator Award and Certificate of Merit for mechanical engineering innovation.
+                    </p>
+                </div>
+                <div class="about-image scroll-animate">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">👨‍🔧</div>
+                        <p>Your Professional Photo Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section style="background: var(--surface); padding: 100px 0;">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Technical Expertise</span>
+                <h2>Skills & Competencies</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category scroll-animate">
+                    <h3 style="color: var(--accent-secondary); margin-bottom: 20px;">Design & CAD</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="skill-tag">SolidWorks</span>
+                        <span class="skill-tag">Fusion 360</span>
+                        <span class="skill-tag">3D Modeling</span>
+                        <span class="skill-tag">Product Design</span>
+                        <span class="skill-tag">Technical Drawing</span>
+                        <span class="skill-tag">Design for Manufacturing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-animate">
+                    <h3 style="color: var(--accent-secondary); margin-bottom: 20px;">Manufacturing</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="skill-tag">CNC Programming</span>
+                        <span class="skill-tag">CAM Software</span>
+                        <span class="skill-tag">Machining</span>
+                        <span class="skill-tag">Fabrication</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">Production Planning</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-animate">
+                    <h3 style="color: var(--accent-secondary); margin-bottom: 20px;">Engineering</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="skill-tag">Mechanical Design</span>
+                        <span class="skill-tag">Process Optimization</span>
+                        <span class="skill-tag">Quality Assurance</span>
+                        <span class="skill-tag">System Analysis</span>
+                        <span class="skill-tag">Equipment Maintenance</span>
+                        <span class="skill-tag">Troubleshooting</span>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-animate">
+                    <h3 style="color: var(--accent-secondary); margin-bottom: 20px;">Leadership</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">SOP Development</span>
+                        <span class="skill-tag">Technical Training</span>
+                        <span class="skill-tag">Cross-functional Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: var(--primary);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--surface-light);
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .skill-tag {
+            background: var(--surface-light);
+            color: var(--text);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            display: inline-block;
+        }
+
+        .skill-tag:hover {
+            background: rgba(255, 107, 53, 0.1);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+    </style>
+
+    <!-- Education Section -->
+    <section>
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Academic Background</span>
+                <h2>Education</h2>
+            </div>
+
+            <div class="experience-grid">
+                <div class="experience-card scroll-animate">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Postgraduate Diploma in Agricultural and Bioresources Engineering</h3>
+                            <div class="experience-company">Michael Okpara University of Agriculture, Umudike</div>
+                        </div>
+                        <span class="experience-date">Sept 2020</span>
+                    </div>
+                    <p class="experience-description" style="color: var(--text-muted); margin-top: 15px;">
+                        Graduated with <strong style="color: var(--accent);">Distinction</strong>, focusing on advanced agricultural 
+                        machinery design, bioresources engineering, and sustainable technology development.
+                    </p>
+                </div>
+
+                <div class="experience-card scroll-animate">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Higher National Diploma in Agricultural Engineering</h3>
+                            <div class="experience-company">Federal Polytechnic Nekede, Owerri</div>
+                        </div>
+                        <span class="experience-date">July 2012</span>
+                    </div>
+                    <p class="experience-description" style="color: var(--text-muted); margin-top: 15px;">
+                        Achieved <strong style="color: var(--accent);">Upper Credit</strong>, specializing in mechanical systems, 
+                        equipment design, and agricultural technology applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .experience-grid {
+            display: grid;
+            gap: 30px;
+        }
+
+        .experience-card {
+            background: var(--surface);
+            border: 1px solid var(--surface-light);
+            border-radius: 12px;
+            padding: 40px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent), var(--accent-secondary));
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .experience-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .experience-card:hover {
+            border-color: var(--accent);
+            transform: translateX(10px);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .experience-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .experience-company {
+            color: var(--accent-secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .experience-date {
+            color: var(--text-muted);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            background: var(--surface-light);
+            padding: 8px 15px;
+            border-radius: 6px;
+        }
+    </style>
+
+    <!-- Values/Philosophy Section -->
+    <section style="background: var(--surface);">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">My Approach</span>
+                <h2>Engineering Philosophy</h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card scroll-animate">
+                    <div class="project-icon">💡</div>
+                    <h3>Innovation First</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        I believe in pushing the boundaries of conventional engineering to create solutions that are not just 
+                        functional, but transformative. Innovation drives progress.
+                    </p>
+                </div>
+
+                <div class="project-card scroll-animate">
+                    <div class="project-icon">🎯</div>
+                    <h3>Precision Matters</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        Every detail counts in engineering. From initial design to final execution, I maintain exacting 
+                        standards to ensure quality and reliability.
+                    </p>
+                </div>
+
+                <div class="project-card scroll-animate">
+                    <div class="project-icon">🤝</div>
+                    <h3>Collaborative Excellence</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        The best engineering solutions emerge from teamwork. I value cross-functional collaboration and 
+                        knowledge sharing to achieve superior results.
+                    </p>
+                </div>
+
+                <div class="project-card scroll-animate">
+                    <div class="project-icon">📈</div>
+                    <h3>Continuous Improvement</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        Engineering is an evolving field. I'm committed to lifelong learning, staying current with new 
+                        technologies, and constantly refining my craft.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content scroll-animate">
+                <h2>Let's Collaborate</h2>
+                <p>
+                    Interested in working together on innovative engineering projects? I'm always open to new 
+                    opportunities and challenges.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                    <a href="projects.html" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Christian Onyeoziri</h3>
+                    <p>Mechanical Engineer & Innovator</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:iconetsenterprise@gmail.com">iconetsenterprise@gmail.com</a></li>
+                        <li><a href="tel:+2348034913133">+234 803 491 3133</a></li>
+                        <li><a href="https://linkedin.com/in/christian-onyeoziri">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Christian Onyeoziri. Engineered with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

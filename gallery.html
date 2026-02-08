@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Christian Onyeoziri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">CO</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="tag">Visual Portfolio</span>
+            <h1>Gallery</h1>
+            <p>A visual showcase of projects, processes, and innovations</p>
+        </div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <section>
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Gallery items - placeholders for actual images -->
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Mechanical Sprayer<br>Design & Prototype</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Mechanical Wheel-Powered Sprayer</h4>
+                        <p>Award-winning agricultural innovation</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Tiger Nut<br>Drying Machine</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Automated Drying System</h4>
+                        <p>Thermal engineering project</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>CNC Milling<br>Operations</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Precision Machining</h4>
+                        <p>Fusion 360 CAM programming</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>SolidWorks<br>CAD Designs</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>3D Component Modeling</h4>
+                        <p>Engineering design work</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Fabrication<br>Workshop</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Innov8 Hub Operations</h4>
+                        <p>Multi-department coordination</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Prototype<br>Assembly</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Product Development</h4>
+                        <p>From concept to completion</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Award<br>Ceremony</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>I-FAIR Recognition</h4>
+                        <p>Israel/Nigeria Innovator Award</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Technical<br>Documentation</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Engineering Drawings</h4>
+                        <p>Detailed specifications and plans</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item scroll-animate">
+                    <div class="gallery-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Team<br>Collaboration</p>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Cross-functional Projects</h4>
+                        <p>Engineering team in action</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .gallery-item {
+            background: var(--surface);
+            border: 1px solid var(--surface-light);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(255, 107, 53, 0.15);
+            border-color: var(--accent);
+        }
+
+        .gallery-placeholder {
+            aspect-ratio: 4/3;
+            background: var(--surface-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--surface-light);
+        }
+
+        .gallery-caption {
+            padding: 20px;
+        }
+
+        .gallery-caption h4 {
+            color: var(--text);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .gallery-caption p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+
+    <!-- Upload Instructions -->
+    <section style="background: var(--surface);">
+        <div class="container">
+            <div class="cta-content scroll-animate" style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <div class="project-icon" style="width: 60px; height: 60px; margin: 0 auto 20px; font-size: 2rem;">📸</div>
+                <h2>Add Your Images</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px;">
+                    Replace the placeholder images above with your actual project photos. Create an "images" folder 
+                    and update the HTML to reference your photos. Supported formats: JPG, PNG, WebP.
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                    <strong>Tip:</strong> Use high-quality images (1920x1080 or higher) for best results. 
+                    Optimize images before uploading to maintain fast page loading.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Christian Onyeoziri</h3>
+                    <p>Mechanical Engineer & Innovator</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:iconetsenterprise@gmail.com">iconetsenterprise@gmail.com</a></li>
+                        <li><a href="tel:+2348034913133">+234 803 491 3133</a></li>
+                        <li><a href="https://linkedin.com/in/christian-onyeoziri">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Christian Onyeoziri. Engineered with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

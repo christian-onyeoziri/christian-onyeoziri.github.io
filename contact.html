@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Christian Onyeoziri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">CO</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="tag">Get In Touch</span>
+            <h1>Contact Me</h1>
+            <p>Let's discuss your project or opportunity</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container" style="max-width: 1000px;">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container scroll-animate">
+                    <h2 style="margin-bottom: 20px; color: var(--text);">Send a Message</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 30px;">
+                        Fill out the form below and I'll get back to you as soon as possible.
+                    </p>
+                    
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+
+                    <p style="color: var(--text-muted); margin-top: 20px; font-size: 0.9rem;">
+                        <strong>Note:</strong> To enable the contact form, sign up at <a href="https://formspree.io" style="color: var(--accent);">Formspree</a> 
+                        and replace "YOUR_FORM_ID" in the form action with your actual form ID.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <div class="contact-info-card scroll-animate">
+                        <div class="contact-icon-large">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:iconetsenterprise@gmail.com">iconetsenterprise@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-info-card scroll-animate">
+                        <div class="contact-icon-large">📱</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+2348034913133">+234 803 491 3133</a></p>
+                        <p><a href="tel:+2347011664610">+234 701 166 4610</a></p>
+                    </div>
+
+                    <div class="contact-info-card scroll-animate">
+                        <div class="contact-icon-large">📍</div>
+                        <h3>Location</h3>
+                        <p>Aco/Amac Estate<br>Lugbe Airport Road<br>Abuja, Nigeria</p>
+                    </div>
+
+                    <div class="contact-info-card scroll-animate">
+                        <div class="contact-icon-large">💼</div>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://linkedin.com/in/christian-onyeoziri" target="_blank">christian-onyeoziri</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-form-container {
+            background: var(--surface);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--surface-light);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            color: var(--text);
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            background: var(--surface-light);
+            border: 1px solid var(--surface-light);
+            color: var(--text);
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-family: 'Manrope', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-info-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-info-card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--surface-light);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+        }
+
+        .contact-icon-large {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info-card h3 {
+            color: var(--accent-secondary);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .contact-info-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .contact-info-card a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info-card a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 968px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+
+    <!-- Map Section (Optional) -->
+    <section style="background: var(--surface); padding: 80px 0;">
+        <div class="container">
+            <div class="section-header scroll-animate" style="text-align: center;">
+                <span class="section-tag">Availability</span>
+                <h2>Open to Opportunities</h2>
+                <p class="section-description" style="margin: 0 auto;">
+                    I'm currently available for consulting projects, full-time positions, and collaborative opportunities 
+                    in mechanical engineering, product design, and manufacturing optimization.
+                </p>
+            </div>
+
+            <div class="opportunities-grid">
+                <div class="opportunity-card scroll-animate">
+                    <div class="project-icon">💼</div>
+                    <h3>Full-Time Positions</h3>
+                    <p>Looking for challenging roles in mechanical engineering, product design, or manufacturing management</p>
+                </div>
+
+                <div class="opportunity-card scroll-animate">
+                    <div class="project-icon">🤝</div>
+                    <h3>Consulting Projects</h3>
+                    <p>Available for short-term consulting on CAD design, CNC programming, and process optimization</p>
+                </div>
+
+                <div class="opportunity-card scroll-animate">
+                    <div class="project-icon">🚀</div>
+                    <h3>Collaborations</h3>
+                    <p>Open to collaborative projects in agricultural machinery, sustainable engineering, and innovation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .opportunities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .opportunity-card {
+            background: var(--primary);
+            padding: 35px;
+            border-radius: 12px;
+            border: 1px solid var(--surface-light);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .opportunity-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .opportunity-card h3 {
+            color: var(--text);
+            margin: 20px 0 15px;
+        }
+
+        .opportunity-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+    </style>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Christian Onyeoziri</h3>
+                    <p>Mechanical Engineer & Innovator</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:iconetsenterprise@gmail.com">iconetsenterprise@gmail.com</a></li>
+                        <li><a href="tel:+2348034913133">+234 803 491 3133</a></li>
+                        <li><a href="https://linkedin.com/in/christian-onyeoziri">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Christian Onyeoziri. Engineered with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
